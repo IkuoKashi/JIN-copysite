@@ -2,6 +2,13 @@ body{
  font-family:'Noto Sans Japanese', sans-serif ;
 }
 
+*{
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+
 li{
     list-style: none;
 }
@@ -12,7 +19,7 @@ header{
 }
 
 .container{
-    
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -47,14 +54,16 @@ nav li:hover{
 
 .main-wrapper{
     margin-top: 40px;
+   
 }
 
 .main-wrapper .container{
     display: flex;
+    margin-bottom: 50px;
 }
 
 .main-left{
-    width: 70%;
+    width: 65%;
 }
 
 .services{
@@ -86,7 +95,8 @@ nav li:hover{
 }
 
 .service p{
-    padding: 20px;
+    padding:5px 15px 20px;
+    font-size: 15px;
 }
 
 .service .title{
@@ -106,10 +116,11 @@ nav li:hover{
     text-align: right;
     color: gray;
     padding: 3px;
+    font-size: 10px;
 }
 
 .main-right{
-    width: 30%;
+    width: 35%;
 }
 
 .main-right .thema{
@@ -119,7 +130,7 @@ nav li:hover{
    margin-top: 10px;
 }
 
-.main-right h2{
+.thema h2{
     color: white;
     display: inline-block;
     background-color: black;
@@ -145,13 +156,12 @@ nav li:hover{
 
 .main-right .btn{
     display:inline-block;
-    background-color:palevioletred;
+    background-color:rgb(214, 48, 103);
     color: white;
     padding:5px 30px ;
     font-size: 15px;
     border-radius: 20px 20px;
     letter-spacing: 2px;
-    border: ;
 }
 
 .main-right .btn:hover{
@@ -196,7 +206,7 @@ nav li:hover{
 .profile .under{
     background-color: greenyellow;
     display: block;
-    vertical-align: baseline;
+ 
     padding: 10px 0 0 0;
     margin-top: 20px;
 }
@@ -212,4 +222,318 @@ nav li:hover{
  margin: 0;
  color: white;
  font-size: 20px;
+}
+
+
+.recent-post{
+    border: 1px solid #dcdcdc;
+    margin-top: 10px;
+}
+
+.recent-post .contents{
+    width: 90%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+
+.recent-post h2{
+ border-bottom: 2px solid black;
+ font-size:18px;
+ font-weight: 500;
+ margin: 5px;
+}
+
+.recent-post .post{
+    display: flex;
+}
+
+.recent-post .pic{
+  width: 35%;
+}
+
+.recent-post .info{
+    width: 60%;
+    padding-left:10px ;
+    
+}
+
+.recent-post p{
+    color: black;
+    font-size: 13px;
+}
+
+.category-part{
+    border: 1px solid #dcdcdc;
+    margin-top: 10px;
+}
+
+.category-part h2{
+    border-bottom: 2px solid black;
+ font-size:18px;
+ font-weight: 500;
+ margin: 0;
+}
+
+.category-part .contents{
+    width: 90%;
+    
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.category-part input{
+    padding: 10px;
+    background-color: #dcdcdc;
+    margin-top: 10px;
+}
+
+.tag-part{
+    border: 1px solid #dcdcdc;
+    margin-top: 10px;
+}
+
+.tag-part h2{
+    border-bottom: 2px solid black;
+ font-size:18px;
+ font-weight: 500;
+ margin: 0;
+}
+
+.tag-part .contents{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.tag-part .tags{
+ display: flex;
+ flex-wrap: wrap;
+ padding-top: 10px;
+}
+
+.tag-part .tag{
+    font-size: 5px;
+    padding:3px  5px;
+    border-radius: 3px;
+    background-color: #DCDCDC;
+    margin: 5px;
+}
+
+.tag:hover{
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+
+.search-part{
+    border: 1px solid #dcdcdc;
+    margin-top: 10px;
+}
+
+.search-part h2{
+    border-bottom: 2px solid black;
+ font-size:18px;
+ font-weight: 500;
+ margin: 0;
+}
+
+.search-part .contents{
+    width: 90%; 
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.search-part input{
+    padding: 10px;
+    background-color: #dcdcdc;
+    margin-top: 10px;
+    border-radius: 30px;
+    width:90% ;
+}
+
+.search-part .input{
+    text-align: center;
+}
+
+.recommend-part .contents{
+    width: 90%;
+    padding: 10px;
+    margin: 0 auto;
+
+}
+
+ .recommend-part{
+ border: 1px solid #DCDCDC;
+ margin-top: 10px;
+}
+
+.recommend-part h2{
+ border-bottom: 2px solid black;
+ font-size:18px;
+ font-weight: 500;
+ margin: 5px;
+}
+
+.recommend-part .post{
+    display: flex;
+}
+
+.recommend-part .pic{
+  width: 35%;
+}
+
+.recommend-part .info{
+    width: 60%;
+    padding-left:10px ;
+}
+
+.recommend-part p{
+    color: black;
+    font-size: 13px;
+}
+
+footer{
+    height: 800px;
+    background-color:rgb(60, 54, 82);
+    color: white;
+    background-size: cover;
+}
+
+footer .container{
+    display:flex ;
+    padding: 20px;
+}
+
+.footer-left{
+  width: 30%;
+  margin: 0;
+  
+}
+
+.footer-left .explain h2{
+    font-size: 90px;
+    margin: 0;
+    text-align: center;
+}
+
+.footer-left p{
+ font-size: 13px;
+ letter-spacing: 3px;
+}
+
+.footer-middle{
+ width: 30%;
+}
+
+.footer-right{
+    width: 30%;
+}
+
+.footer-left .btn{
+    display:inline-block;
+    background-color:rgb(214, 48, 103);
+    color: white;
+    padding:10px 30px ;
+    margin: 30px;
+    font-size: 13px;
+    border-radius: 20px 20px;
+    letter-spacing: 2px;
+}
+
+.footer-tag{
+    padding-top: 70px;
+}
+
+.footer-tag  h2{
+ padding-left: 10px;
+ font-size:15px;
+ font-weight: 500;
+ margin: 0;
+ border-left:5px solid greenyellow;
+}
+.footer-tag  .tags{
+ display: flex;
+ flex-wrap: wrap;
+ padding-top: 10px;
+}
+
+.footer-tag .tag:hover{
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+
+.footer-tag  .tag{
+    font-size: 5px;
+    padding:3px 10px;
+    border-radius: 3px;
+    background-color: rgb(167, 162, 182);
+    margin: 5px 2px 5px 0;
+}
+
+.footer-middle{
+  padding: 30px;
+  
+}
+
+.middle-category{
+    margin-bottom: 70px;
+}
+
+.middle-category  h2{
+    padding-left: 10px;
+    font-size:15px;
+    font-weight: 500;
+    margin: 0;
+    border-left:5px solid greenyellow;
+    
+   }
+
+   .middle-category p{
+       font-size: 12px;
+       letter-spacing: 2px;
+       padding-left: 8px;
+   }
+
+   .middle-category .fas{
+     margin-right: 5px;
+   }
+
+.footer-right .popular-post h2{
+    padding-left: 10px;
+    font-size:15px;
+    font-weight: 500;
+    margin: 0;
+    border-left:5px solid greenyellow;
+}
+
+.popular-post{
+ padding-top: 25px;
+}
+
+.popular-post .post{
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+
+
+.popular-post .pic{
+  width: 30%;
+}
+
+
+.popular-post .info{
+    width: 60%;
+    padding-left:10px ;
+   
+}
+
+.popular-post p{
+    font-size: 13px;
+    margin: 0;
 }
